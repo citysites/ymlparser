@@ -8,9 +8,9 @@
                 <xs:element name="shop">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="name" type="xs:string" />
-                            <xs:element name="company" type="xs:string" />
-                            <xs:element name="url" type="xs:string" />
+                            <xs:element name="name" type="xs:string" minOccurs="0" />
+                            <xs:element name="company" type="xs:string" minOccurs="0" />
+                            <xs:element name="url" type="xs:string" minOccurs="0" />
                             <xs:element name="platform" type="xs:string" minOccurs="0" />
                             <xs:element name="version" type="xs:string" minOccurs="0" />
                             <xs:element name="agency" type="xs:string" minOccurs="0" />
@@ -50,6 +50,8 @@
                                                     <xs:extension base="xs:string">
                                                         <xs:attribute name="id" type="xs:integer" use="required" />
                                                         <xs:attribute name="parentId" type="xs:integer" use="optional" />
+                                                        <xs:attribute name="portal_id" type="xs:string" />
+                                                        <xs:attribute name="portal_url" type="xs:anyURI" />
                                                     </xs:extension>
                                                 </xs:simpleContent>
                                             </xs:complexType>

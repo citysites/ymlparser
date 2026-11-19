@@ -384,6 +384,13 @@ abstract class AOffer
      */
     public function setAvailable($value)
     {
+        // В YML для Prom пустое значение означает отсутствие товара.
+        if ($value === '') {
+            $value = 'false';
+        } elseif ($value === 'склад') {
+            $value = 'true';
+        }
+
         $this->available = $value;
 
         return $this;
