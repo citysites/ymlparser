@@ -1,13 +1,13 @@
 {
     "name": "lireincore/ymlparser",
-    "description": "YML (Yandex Market Language) parser",
+    "description": "Streaming YML parser for Yandex Market, Prom.ua, and Horoshop product feeds",
     "type": "library",
-    "keywords": ["yml", "parser", "yandex", "market"],
-    "homepage": "https://github.com/lireincore/ymlparser",
+    "keywords": ["yml", "parser", "yandex", "market", "prom", "horoshop"],
+    "homepage": "https://github.com/citysites/ymlparser",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/lireincore/ymlparser/issues",
-        "source": "https://github.com/lireincore/ymlparser"
+        "issues": "https://github.com/citysites/ymlparser/issues",
+        "source": "https://github.com/citysites/ymlparser"
     },
     "authors": [
         {

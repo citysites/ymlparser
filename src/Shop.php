@@ -103,21 +103,15 @@ class Shop
         }
 
 
-        if ($this->name === null) {
-            $this->addError("Shop: missing required attribute 'name'");
-        } elseif (!$this->name) {
+        if ($this->name !== null && !$this->name) {
             $this->addError("Shop: incorrect value in attribute 'name'");
         }
 
-        if ($this->company === null) {
-            $this->addError("Shop: missing required attribute 'company'");
-        } elseif (!$this->company) {
+        if ($this->company !== null && !$this->company) {
             $this->addError("Shop: incorrect value in attribute 'company'");
         }
 
-        if ($this->url === null) {
-            $this->addError("Shop: missing required attribute 'url'");
-        } elseif (!$this->url) {
+        if ($this->url !== null && !$this->url) {
             $this->addError("Shop: incorrect value in attribute 'url'");
         }
 
